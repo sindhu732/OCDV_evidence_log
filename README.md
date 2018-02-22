@@ -1,22 +1,35 @@
 # OCDV Frontend
 
-## Make a folder 
+### Make a folder 
 $ mkdir OCDV_frontend
 
-## Clone this repository
+### Clone this repository
 $ git clone https://github.com/sindhu732/OCDV_evidence_log.git && cd OCDV_evidence_log
 
-## Install Angular Command Line Interface globally
+### Install Angular Command Line Interface globally
 $ npm install -g @angular/cli@latest
 
-## Install the node modules as specified in package.json
+### Install the node modules as specified in package.json
 $ npm install
 
-## Build and serve the project at localhost:4200
+### Build and serve the project at localhost:4200
 $ ng serve
 
-## Build the project in production mode and confirm that there are files in "dist" folder
+### Build the project in production mode and confirm that there are files in "dist" folder
 $ ng build --prod
 
-## Deploy to firebase 
+### Deploy to firebase 
 $ firebase deploy
+
+## To not leave a trail in Browser history this Javascript function was used when the "EXIT" button is clicked
+  
+```  
+  logoutAndEscape() {
+    this.logout();
+    location.replace("https://www.yahoo.com/news/");
+  }
+
+  logout() {
+    console.log("Logout user and delete user data on device");
+  } ```
+  
