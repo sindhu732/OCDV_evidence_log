@@ -31,5 +31,5 @@ $ firebase deploy
 
   logout() {
     console.log("Logout user and delete user data on device");
-  } ```
-  
+  } 
+```
